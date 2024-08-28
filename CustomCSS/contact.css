@@ -1,0 +1,117 @@
+
+.contactsection1{
+    font-size: 1.5vw;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+.contactform{
+    border-radius: 15px;
+    padding: 20px 30px 20px 30px;
+    background-color: #f3f3f3;
+}
+.forminputs{
+    position: relative;
+}
+.forminputs p{
+    margin: 0px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    transition: 0.3s;
+}
+.forminputs input{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+
+
+
+input {
+	appearance: none;
+	border-radius: 0;
+}
+
+.card {
+	margin: 2rem auto;
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	/* max-width: 425px; */
+	background-color: #FFF;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px 0 rgba(#999, .25);
+	padding: .75rem;
+}
+
+.input {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+	&+.input {
+		margin-top: 1.5rem;
+	}
+}
+
+.input-label {
+	color: #8597a3;
+	position: absolute;
+	top: 1.5rem;
+	transition: .25s ease;
+}
+
+.input-field {
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee; 
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+	&:focus, &:valid {
+		outline: 0;
+		border-bottom-color: #d13131;
+		&+.input-label {
+			color:#d13131;;
+			transform: translateY(-1.5rem);
+		}
+	}
+}
+
+.action {
+	margin-top: 2rem;
+}
+
+.action-button {
+	font: inherit;
+	font-size: 20px;
+	padding: 0.6em;
+	width: 20%;
+	font-weight: 500;
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+	border-radius: 5px;
+	color: #FFF;
+	border: 0;
+    transition:0.5s;
+	&:focus {
+		outline: 0;
+	}
+}
+.action-button:hover{
+    cursor: pointer;
+    background-color: #11dd52;
+    background-image: linear-gradient(147deg, #FF2525 0%, #FFE53B 74%);
+    color: black;
+}
+@media only screen and (max-width: 480px) {
+    .action-button{
+        font-size: 3.2vw;
+    }
+}

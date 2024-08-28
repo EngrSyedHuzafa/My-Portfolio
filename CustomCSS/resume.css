@@ -1,0 +1,161 @@
+
+
+
+.resumecontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resumebox{
+    height: 150px;
+    width: 80%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.resumebox p{
+    font-size: 1vw;
+}
+.resumeadjestment{
+    width: 50%;
+}
+.fa-graduation-cap{
+    font-size: 35px;
+    color: #eb1c26;
+}
+.brief{
+    margin-left: 10px;
+    font-size: 30px;
+    color: #004da7;
+}
+.education{
+    font-size: 20px;
+}
+.skill11{
+    background-color: #f3f3f3;
+}
+.skill2{
+    display: flex;
+}
+.programmingskill{
+    font-size: 20px;
+    font-weight: bold;
+}
+.skills,
+.skills .skill,
+.skills .skill .skill-title,
+.skills .skill .skill-bar {
+   width: 100%;
+   float: left;
+}
+
+.skills .skill {
+   margin-bottom: 30px;
+}
+
+.skills .skill .skill-title {
+   color: #000000;
+   margin-bottom: 10px;
+   font-weight: 400;
+   font-size: 14px;
+}
+
+.skills .skill .skill-bar {
+   width: 0;
+   height: 6px;
+   background: #f0f0f0;
+   transition: 1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
+   --bar-color: #000000; /* Default color */
+}
+
+.skills.active .skill .skill-bar {
+   width: 100%;
+}
+
+.skills .skill .skill-bar span {
+   float: left;
+   width: 0%;
+   background: var(--bar-color);
+   height: 6px;
+   position: relative;
+   transition: 1s cubic-bezier(1, 0, .5, 1);
+   -webkit-transition: 1s cubic-bezier(1, 0, .5, 1);
+   -ms-transition: 1s cubic-bezier(1, 0, .5, 1);
+}
+
+.skills .skill .skill-bar span b {
+   float: left;
+   width: 100%;
+   position: relative;
+   text-align: right;
+   opacity: 0;
+   font-size: 14px;
+   color: #000000;
+   font-weight: 400;
+   top: -20px;
+}
+
+.container1{
+   width: 50%;
+   padding: 0 15px;
+}
+.softskill{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.softskill1{
+    margin-top: 40px;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900&subset=latin,latin-ext');
+
+
+@media only screen and (max-width: 900px) {
+    .resumebox p{
+        font-size: 1.5vw;
+    }
+}
+  @media only screen and (max-width: 800px) {
+    .skill2{
+        flex-wrap: wrap;
+    }
+    .container1{
+        width: 100%;
+    }
+    .resumeadjestment{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .resumebox p{
+        font-size: 2.4vw;
+    }
+    .about{
+        margin: 0px;
+    }
+    .description{
+        font-size: 2.4vw;
+    }
+    .frontend{
+        font-size: 4vw;
+    }
+    .resumecontainer{
+        flex-direction: column;
+    }
+  }
+@media only screen and (max-width: 480px) {
+    .resumebox p{
+        font-size: 3vw;
+    } 
+    .description{
+        font-size: 3.4vw;
+    }
+    .frontend{
+        font-size: 5vw;
+    }
+}

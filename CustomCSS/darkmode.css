@@ -1,0 +1,92 @@
+body.dark-mode {
+    background-color: #292929;
+    background-image: linear-gradient(0deg, #292929 0%, #292929 100%);
+    color: white;
+  }
+body.dark-mode .name{
+    background-color: #000000;
+}
+body.dark-mode .icons{
+    color: white;
+}
+body.dark-mode .contact{
+ background-color: #292929;
+}
+body.dark-mode .socialicon li a i.fa-github{
+    color: rgb(255, 255, 255);
+} 
+body.dark-mode .fa-brands{
+    background-color: #292929;
+} 
+body.dark-mode .icon{
+    background-color: #000000;
+} 
+body.dark-mode .fullstack{
+    color: white;
+    background-color: #292929;
+} 
+body.dark-mode .homesection{
+    background-color: #000000;
+} 
+body.dark-mode .wrapper{
+    background-color: #000000;
+} 
+body.dark-mode .icon2{
+    background-color: #292929;
+} 
+body.dark-mode .home p{
+    color: #ffffff;
+}
+.icon2:has(.fa-moon) {
+    --color: #ff0000;
+} 
+body.dark-mode .about{
+    background-color: #000000;
+}
+body.dark-mode .workbox1{
+    background: #292929;  /* fallback for old browsers */
+}
+body.dark-mode .workbox2{
+    background: #292929;  /* fallback for old browsers */
+}
+body.dark-mode .resume{
+    background-color: #000000;
+}
+body.dark-mode .skill11{
+    background-color: #292929;
+}
+body.dark-mode .skill .skill-title{
+    color: #ffffff;
+}
+body.dark-mode .skill .skill-bar span b{
+    color: #ffffff;
+}
+body.dark-mode .softskill{
+    background-color: #000000;
+}
+body.dark-mode .sliderwidth{
+    background-color: #292929;
+}
+body.dark-mode .BFposition{
+    background-color: #000000;
+}
+body.dark-mode .card{
+    background-color: #000000;
+}
+body.dark-mode .navbar{
+    color: #ffffff;
+}
+body.dark-mode .nav{
+    background-color:rgb(0, 0, 0);
+}
+body.dark-mode .projects{
+    background-color: #000000;
+}
+body.dark-mode .front{
+    background-color: #292929;
+    color: white;
+}
+body.dark-mode .back{
+    background-color: #292929;
+    color: white;
+}

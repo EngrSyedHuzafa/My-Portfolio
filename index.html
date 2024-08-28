@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CustomCSS/darkmode.css">
+    <link rel="stylesheet" href="CustomCSS/home.css">
+    <link rel="stylesheet" href="CustomCSS/style.css">
+    <link rel="stylesheet" href="CustomCSS/slider.css">
+    <link rel="stylesheet" href="CustomCSS/resume.css">
+    <link rel="stylesheet" href="CustomCSS/project.css">
+    <link rel="stylesheet" href="CustomCSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+</head>
+<body>
+    <div class="div1">
+        <section class="section1">
+            <div id="pitcher">
+                <img style="border-radius: 10px;" src="images/SyedHuzafa.png" alt="">
+            </div>
+            <div class="name">
+                <h3 class="username">Syed Huzafa Ali</h3>
+                <button class="fullstack">Full Stack Developer</button>
+                <ul class="socialicon">
+                    <li><a href="https://www.facebook.com/syedhuzafa.ali.7?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/engrsyedhuzafa" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+                <div class="outercontact">
+                    <div class="contact">
+                        <div class="contact1">                            
+                            <p class="text">Phone</p>
+                            <i class="fa-solid fa-mobile-screen-button icon"></i>  
+                            <p class="phone2">(+92) 3084637909</p>
+                            <hr>                       
+                        </div>
+                        <div class="contact1">
+                            <p class="text">Email</p>                           
+                            <i class="fa-solid fa-envelope icon"></i>
+                            <p class="email">engr.syed.huzafa.ali@gmail.com </p>                            
+                            <hr>   
+                        </div>
+                        <div class="contact1">
+                            <p class="text">Location</p>
+                            <i class="fa-solid fa-location-dot icon"></i>  
+                            <p class="location">Lahore, Punjab</p>
+                            <hr> 
+                        </div>
+                        <div class="contact1">
+                            <p class="text">Birthday</p>
+                            <i class="fa-regular fa-calendar-days icon"></i>
+                            <p class="birthday">02/06/2002</p>
+                            <hr> 
+                        </div>
+                    </div>
+                </div>
+                <a href="CV.docx" id="cv" download><i class="fa-solid fa-download downloadicon"></i>Download CV</a>
+            </div>
+        </section>
+        <div class="sectionsContainer">
+          <div class="div2">
+            <nav class="wrapper">
+                <div class="home"><a href="#" class="icon2" onclick="hiddensection('home')"><i class="fa-regular fa-user icons"></i><p class="home2">&nbsp Home</p></a></div>
+                <div class="home"><a href="#" class="icon2" onclick="hiddensection('about')"><i class="fa-regular fa-file icons"></i><p class="home2">&nbsp About</p></a></div>
+                <div class="home"><a href="#" class="icon2" onclick="hiddensection('resume')"><i class="fa-solid fa-briefcase icons"></i><p class="home2">Resume</p></a></div>
+                <div class="home"><a href="#" class="icon2" onclick="hiddensection('projects')"><i class="fa-regular fa-pen-to-square icons"></i><p class="home2">Projects</p></a></div>
+                <div class="home"><a href="#" class="icon2" onclick="hiddensection('contact')"><i class="fa-regular fa-address-book icons"></i><p class="home2">Contact</p></a></div>   
+                <div class="home"><a href="#" class="icon2" onclick="toggle()"><i class="fa-regular fa-sun icons mode"></i><p class="home2" id="dark">  &nbsp &nbspDark</p></a></div>                 
+            </nav>
+          </div>
+          
+          <div class="nav">
+            <i class="fa-solid fa-bars navbar" onclick="show()"></i>
+            <nav class="wrapper responsivenav">
+                <div class="home"><a href="#" class="icon2" onclick="hiddensection('home')"><i class="fa-regular fa-user icons"></i><p class="home2">&nbsp Home</p></a></div>
+                <div class="home"><a href="#" class="icon2" onclick="hiddensection('about')"><i class="fa-regular fa-file icons"></i><p class="home2">&nbsp About</p></a></div>
+                <div class="home"><a href="#" class="icon2" onclick="hiddensection('resume')"><i class="fa-solid fa-briefcase icons"></i><p class="home2">Resume</p></a></div>
+                <div class="home"><a href="#" class="icon2" onclick="hiddensection('projects')"><i class="fa-regular fa-pen-to-square icons"></i><p class="home2">Projects</p></a></div>
+                <div class="home"><a href="#" class="icon2" onclick="hiddensection('contact')"><i class="fa-regular fa-address-book icons"></i><p class="home2">Contact</p></a></div>   
+                <div class="home"><a href="#" class="icon2" onclick="toggle()"><i class="fa-regular fa-sun icons mode"></i><p class="home2" id="dark">Dark</p></a></div>                 
+            </nav>
+          </div>
+
+          <!--/////////////////////////////////////[[[[HOME SECTION]]]]]////////////////////////////////////-->
+          <section class="homesection section" id="home">
+            <div class="homeflex">
+                <div class="row">  
+                    <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                        <div class="about-text">
+                            <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+                            <h1 class="animated animated-text">
+                                <span class="mr-2">Hello everyone, I'm</span>
+                                    <div class="animated-info">
+                                        <span class="animated-item">Syed Huzafa Ali</span>
+                                        <span class="animated-item">Full Stack Developer</span>
+                                        <span class="animated-item">PHP Developer</span>
+                                    </div>
+                            </h1>
+    
+                            <p>Building a successful product is a challenge. <br> I am highly energetic in user experience design, interfaces and web development.</p>
+                            
+                            <div class="custom-btn-group mt-4">
+                              <a href="CV.docx" class="btn mr-lg-2 custom-btn" download><i class='uil uil-file-alt'></i> Download Resume</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-lg-5 col-md-12 col-12">
+                        <div class="about-image svg">
+                            <img src="images/web-developers.avif" height="300px" width="300px" class="img-fluid" alt="svg image">                          
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+          </section>
+                    <!--/////////////////////////////////////[[[[END HOME SECTION]]]]]////////////////////////////////////-->
+
+                    <!--/////////////////////////////////////[[[[ABOUT SECTION]]]]]////////////////////////////////////-->
+            <section class="about section" id="about">
+                <div class="headingPosition">
+                  <h1 class="about1">About</h1>
+                </div>
+                <p>
+                    Hello there! I’m <b>Syed Huzafa Ali</b>,<br> a proactive and passionate web developer with expertise in both        <b>front-end</b> and <b>back-end</b> development. I am currently studying <b>BSCS</b> at <b>UET Lahore</b>.   <br><br> While I’m currently on the lookout for new opportunities, my focus has been on building practical     projects that demonstrate my skills.
+                    With my technical expertise, I aim to contribute to innovative web development projects that address real-world     problems.<br><br> In particular, I am interested in roles that offer opportunities for growth and learning in   modern web frameworks and technologies. I look forward to collaborating with teams that value creativity and a    problem-solving mindset. Let's connect and explore how we can work together to create impactful solutions!
+                </p>
+                <h1 class="ido">What I Do!</h1>
+                <div class="ido2">
+                    <div class="resumeadjestment">
+                        <div class="workbox workbox1">
+                            <i class="fa-brands fa-html5"></i>
+                            <p class="frontend">FrontEnd Developer</p>
+                            <p class="description">Front-End Developer passionate about creating visually appealing and highly functional   web interfaces. My expertise lies in translating design concepts into interactive and user-friendly websites  and applications.</p>
+                        </div>
+                        <div class="workbox workbox2">
+                            <i class="fa-solid fa-code"></i>
+                            <p class="frontend">BackEnd Developer</p>
+                            <p class="description">Back-End Developer specializing in building and maintaining the server-side logic and    functionality of web applications. My expertise ensures that the behind-the-scenes components of a website     operate smoothly and efficiently.</p>
+                        </div>
+                    </div>
+                    <div class="resumeadjestment">
+                        <div class="workbox workbox2">
+                            <img src="images/c++.png" width="50px" height="50px" alt="">
+                            <p class="frontend">C++ Developer</p>
+                            <p class="description">C++ Developer with a deep understanding of system-level programming and application  development. My expertise lies in utilizing C++ to create high-performance software solutions.</p>
+                        </div>
+                        <div class="workbox workbox1">
+                            <i class="fa-solid fa-bug"></i>
+                            <p class="frontend">Bug Solver</p>
+                            <p class="description"> Bug Solver with a knack for identifying and resolving software issues to ensure smooth and error-free operation of applications.I specialize in debugging and solving complex software issues. I ensure your code runs efficiently.</p>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <p><i class="fa-regular fa-copyright"></i>2024 All Right Reserved <b>Syed Huzafa Ali</b></p>
+                </footer>
+            </section>
+            <!--/////////////////////////////////////[[[[END ABOUT SECTION]]]]]////////////////////////////////////-->
+
+            <!--/////////////////////////////////////[[[[RESUME SECTION]]]]]/////////////////////////////////////////-->
+            <section id="resume" class="BFposition section">
+                <div class="headingPosition">
+                  <h1 class="BFborder">Resume</h1>
+                </div>
+                <div class="resumecontainer">
+                    <div class="resumeadjestment">
+                        <p class="education"><i class="fa-solid fa-graduation-cap"></i>Education</p>
+                        
+                            <div class="resumebox workbox1">
+                                <p class="frontend">2022-2026</p>
+                                <p><b>BSCS: </b>Bachelor of Science in Computer Science </p>
+                                <p><b>University: </b>University of Engineering & Technology Lahore <b>Narowal Campus</b></p>
+                                <p><b>CGPA:</b> 2.9/4</p>
+                            </div>
+                            <div class="resumebox workbox1">
+                                <p class="frontend">2019-2020</p>
+                                <p><b>ICS: </b>Intermediate in Computer Science</p>
+                                <p><b>College: </b> Government College of Science <b>Lahore</b></p>
+                                <p><b>Percentage: </b>82%</p>
+                            </div>
+                            <div class="resumebox workbox1">
+                                <p class="frontend">2017-2018</p>
+                                <p><b>Matric</b></p>
+                                <p><b>School: </b> Millat-e-Islamiya Model High School <b>Lahore</b></p>
+                                <p><b>Percentage: </b>80%</p>
+                            </div>                     
+                    </div>
+                    <div class="resumeadjestment">
+                        <p class="education"><i class="fa-solid fa-briefcase brief"></i>&nbsp Experience</p>
+                        <div class="resumebox workbox2">
+                            <p class="frontend">2022-2022</p>
+                            <p><b>Course: </b>Advance Web Application & Development</p>
+                            <p><b>From: </b>Navttc</p>
+                        </div>
+                        <div class="resumebox workbox2">
+                            <p class="frontend">2023-2023</p>
+                            <p><b>Course: </b>JavaScript Language</p>
+                            <p><b>From: </b>Udemy</p>
+                        </div>
+                        <div class="resumebox workbox2">
+                            <p class="frontend">2024-2024</p>
+                            <p><b>Course: </b>HTML5,CSS3,JavaScript & PHP</p>
+                            <p><b>From: </b>Udemy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill11">
+                    <div class="skill2">
+                        <div class="containerwidth container1">
+                            <div class="skills ">
+                                <p class="programmingskill">Programming Skill</p>
+                               <div class="skill">
+                                  <div class="skill-title">
+                                     HTML5
+                                  </div>
+                                  <div class="skill-bar" data-bar="90" style="--bar-color: #4caf50;"><span></span></div>
+                               </div>
+                               <div class="skill">
+                                  <div class="skill-title">
+                                     CSS3
+                                  </div>
+                                  <div class="skill-bar" data-bar="75" style="--bar-color: #2196f3;"><span></span></div>
+                               </div>
+                               <div class="skill">
+                                  <div class="skill-title">
+                                     JavaScript
+                                  </div>
+                                  <div class="skill-bar" data-bar="65" style="--bar-color: #ff9800;"><span></span></div>
+                               </div>
+                               <div class="skill">
+                                  <div class="skill-title">
+                                     PHP
+                                  </div>
+                                  <div class="skill-bar" data-bar="80" style="--bar-color: #9c27b0;"><span></span></div>
+                               </div>
+                               <div class="skill">
+                                  <div class="skill-title">
+                                     C++
+                                  </div>
+                                  <div class="skill-bar" data-bar="95" style="--bar-color: #f44336;"><span></span></div>
+                               </div>
+                               <div class="skill">
+                                <div class="skill-title">
+                                   Bootstrap
+                                </div>
+                                <div class="skill-bar" data-bar="80" style="--bar-color: #f44336;"><span></span></div>
+                             </div>
+                             <div class="skill">
+                                <div class="skill-title">
+                                   Laravel
+                                </div>
+                                <div class="skill-bar" data-bar="50" style="--bar-color: #1c2143;"><span></span></div>
+                             </div>
+                            </div>
+                        </div>
+                        <div class="containerwidth container1">
+                            <p class="programmingskill">Soft Skill</p>    
+                            <p class="softskill1"><span class="softskill">Problem Solving</span></p>                        
+                            <p class="softskill1"><span class="softskill">Adaptability</span>
+                                <span class="softskill">Communication</span>
+                            </p>
+                            <p class="softskill1"><span class="softskill">Complex Problem Solver</span></p>
+                            <p class="softskill1"><span class="softskill">Team Work</span></p>
+                            <p class="softskill1"><span class="softskill">Strong Decision Maker</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sliderwidth">
+                    <div class="container">
+                        <section class="customer-logos slider">
+                           <div class="slide"><img src="images/c++h.png" width="90px" height="100px"></div>
+                           <div class="slide"><i class="fa-solid fa-database"></i></div>
+                           <div class="slide"><i class="fa-brands fa-html5"></i></div>
+                           <div class="slide"><i class="fa-brands fa-css3-alt"></i></div>
+                           <div class="slide"><i class="fa-brands fa-square-js"></i></div>
+                           <div class="slide"><i class="fa-brands fa-php"></i></div>
+                           <div class="slide"><i class="fa-brands fa-bootstrap"></i></div>             
+                           <div class="slide"><i class="fa-brands fa-laravel"></i></div>
+                        </section>
+                     </div>
+                </div>
+                <footer class="footer">
+                    <p><i class="fa-regular fa-copyright"></i>2024 All Right Reserved <b>Syed Huzafa Ali</b></p>
+                </footer>
+            </section>
+
+             <!--/////////////////////////////////////[[[[END RESUME SECTION]]]]]/////////////////////////////////////////-->
+
+              <!--/////////////////////////////////////[[[[Project SECTION]]]]]/////////////////////////////////////////-->
+            <section id="projects" class="BFposition section" style="display: none;">
+                <div class="headingPosition">
+                  <h1 class="BFborder">Projects</h1>
+                </div>
+                <div class="projectbox">
+                    <div>
+                      <div class="projectcard">
+                        <div class="content">
+                          <div class="front">
+                            <div><img src="images/snake-code-in-cpp.png"  alt=""></div>
+                            <div>Snake Game</div>
+                          </div>
+                          <div class="back">
+                            Snake Game
+                            <p class="projectdescription">
+                              Developed a classic Snake game using C++ and Data Structures and Algorithms (DSA).<br> This project includes:
+                              <b>Linked Lists, Queue, Graph Algorithms, Dynamic Memory Management.</b>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="projectcard">
+                        <div class="content">
+                          <div class="front">
+                            <div><img src="images/tictactoe.webp" alt=""></div>
+                            <div>TIC TAK TOE</div>
+                          </div>
+                          <div class="back">
+                            TIC TAK TOE
+                            <p class="projectdescription">
+                                Tic Tac Toe game using <b>HTML, CSS, JavaScript</b>. This project features a fully interactive game board, responsive design, and dynamic gameplay logic. 
+                              </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="projectcard">
+                        <div class="content">
+                          <div class="front">
+                            <div><img src="images/login.jpg"  alt=""></div>
+                            <div>Login Form</div>
+                          </div>
+                          <div class="back">
+                            Login Form
+                            <p class="projectdescription">
+                                This project demonstrates a secure login form implementation using <b>PHP, MySQL, and PDO</b>. It ensures safe user authentication by leveraging prepared statements and hashed passwords.
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="projectcard">
+                        <div class="content">
+                          <div class="front">
+                            <div><img src="images/crud.png" alt=""></div>
+                            <div>CRUD</div>
+                          </div>
+                          <div class="back">
+                            CRUD
+                            <p class="projectdescription">
+                                PHP CRUD using <b>MySQL, PDO,</b> and <b>Bootstrap</b>
+                                Explore a fully functional CRUD <b>(Create, Read, Update, Delete)</b> application built with PHP. This project leverages MySQL for database management, PDO for secure database interactions, and Bootstrap for a responsive and modern UI.
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <footer class="footer">
+                    <p><i class="fa-regular fa-copyright"></i>2024 All Right Reserved <b>Syed Huzafa Ali</b></p>
+                </footer>
+            </section>
+
+            <!--/////////////////////////////////////[[[[END PROJECT SECTION]]]]]/////////////////////////////////////////-->
+
+            <!--/////////////////////////////////////[[[CONTACT SECTION]]]]]/////////////////////////////////////////-->
+            <section id="contact" class="BFposition section" style="display: none;">
+                <div class="headingPosition">
+                  <h1 class="BFborder">Contact</h1>
+                </div>
+                <div class="card">
+                    <form class="card-form">
+                        <div>
+                            <p>It is Always a Pleasure to discuss <b>Projects</b> with you </p>
+                        </div>
+                        <div class="input">
+                            <input type="text" class="input-field" required/>
+                            <label class="input-label">Full name</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" class="input-field" required/>
+                            <label class="input-label">Email</label>
+                        </div>
+                        <div class="input">
+                            <input type="text" class="input-field" required/>
+                            <label class="input-label">Message</label>
+                        </div>
+                        <div class="action">
+                            <button class="action-button">Get started</button>
+                        </div>
+                    </form>
+                </div>
+                <footer class="footer">
+                    <p><i class="fa-regular fa-copyright"></i>2024 All Right Reserved <b>Syed Huzafa Ali</b></p>
+                </footer>
+            </section>
+            <!--/////////////////////////////////////[[[END CONTACT SECTION]]]]]/////////////////////////////////////////-->
+        </div>
+    </div> 
+    <script src="CustomJS/javascript.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+</body>
+</html>
